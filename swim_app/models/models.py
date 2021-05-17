@@ -6,7 +6,7 @@ class Faculty(models.Model):
     professor_name = models.CharField(max_length = 200)
 
     class Meta:
-        verbose_name_plural = "faculty"
+        verbose_name_plural = "faculty" # replace plural with singular verb "Faculty" instead of "Facultys"
 
     def __str__(self):
         return self.professor_name
